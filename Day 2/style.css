@@ -1,0 +1,147 @@
+/* Make widths easier to calculate */
+* {
+  box-sizing: border-box;
+}
+
+/* Basic styles for the whole page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #23415c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+/* Navigation links in a centered row */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #416781;
+}
+
+/* Main content area */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* White cards for each section */
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2,
+section h3 {
+  color: #23415c;
+}
+
+/* Display feature list items as responsive cards */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  background-color: #f2f7fa;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #999999;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #e6eef3;
+}
+
+/* Feedback form */
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #087e8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #075e68;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #555555;
+}
+
+/* Adjust the page for small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
