@@ -1,0 +1,79 @@
+:root {
+  --page-background: #f4f6f8;
+  --panel-background: #ffffff;
+  --text-color: #202124;
+  --border-color: #c7cdd4;
+  --button-background: #e5e9ee;
+  --button-text: #202124;
+}
+
+body.dark {
+  --page-background: #17191c;
+  --panel-background: #24272b;
+  --text-color: #f1f3f4;
+  --border-color: #555b63;
+  --button-background: #3a3f45;
+  --button-text: #f1f3f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background: var(--page-background);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--panel-background);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--panel-background);
+  color: var(--text-color);
+  font: inherit;
+  resize: vertical;
+}
+
+.warning {
+  color: #c76b00;
+}
+
+.over {
+  color: #d00000;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--button-background);
+  color: var(--button-text);
+  font: inherit;
+  cursor: pointer;
+}
